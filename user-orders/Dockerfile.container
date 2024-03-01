@@ -1,0 +1,12 @@
+FROM ruby:latest
+ARG port 
+ARG node
+ARG ruby
+ARG bundle
+ENV PORT $port
+ENV NODE $node
+ENV RUBY $ruby
+ENV BUNDLE $bundle
+RUN mkdir /root/src
+WORKDIR /root/src
+CMD ["bash"]
